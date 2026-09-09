@@ -145,4 +145,6 @@ This template intentionally does not include file uploads, Vercel Blob, guest mo
 
 Edit the agent in `agent/agent.ts`. Its behavior is defined in `agent/instructions.md`, and tools live in `agent/tools/`.
 
+
 The browser talks to eve with `useEveAgent()` from `eve/react`; the app stores eve stream events and session state so `/chat/[id]` can resume the same durable conversation after refresh.
+
