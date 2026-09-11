@@ -140,7 +140,7 @@ pnpm dev
 
 This template intentionally does not include file uploads, Vercel Blob, guest mode, NextAuth/Auth.js, or AI Elements.
 
-## Agent Code
+### Agent Code
 
 
 Edit the agent in `agent/agent.ts`. Its behavior is defined in `agent/instructions.md`, and tools live in `agent/tools/`.
