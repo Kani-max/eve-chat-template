@@ -55,6 +55,7 @@ To upgrade the linked project to production mode, run the setup script. It provi
 # Or: ./scripts/setup.sh --scope <team-slug>
 ```
 
+
 Production mode requires:
 
 ```bash
@@ -67,6 +68,7 @@ UPSTASH_REDIS_REST_TOKEN=
 KV_REST_API_URL=
 KV_REST_API_TOKEN=
 ```
+
 
 Other optional environment variables:
 
@@ -93,6 +95,7 @@ vercel connect create mcp.notion.com --name notion
 vercel connect create https://mcp.linear.app/mcp --name linear
 vercel connect create https://mcp.sentry.dev/mcp --name sentry
 ```
+
 
 The deploy button does not require these integrations. For manual setup, put the returned connector UIDs in `SLACK_CONNECTOR`, `NOTION_CONNECTOR`, `LINEAR_CONNECTOR`, and `SENTRY_CONNECTOR`. Local development falls back to `slack/eve-chat-template`, `notion`, `linear`, and `sentry`, so connectors created with the names above work without editing `agent/`.
 
